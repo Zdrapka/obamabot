@@ -1,6 +1,7 @@
 import time
+
 import discord
-from discord import app_commands as ac
+from discord import app_commands
 from discord.ext import commands
 
 from cogs.utils.default import Obamabot
@@ -31,5 +32,5 @@ class Info(commands.Cog):
         await ctx.send("Work in progress")
 
 
-def setup(bot):
-    bot.add_cog(Info(bot))
+async def setup(bot):
+    await bot.add_cog(Info(bot))

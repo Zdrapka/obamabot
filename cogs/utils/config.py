@@ -11,7 +11,7 @@ IS_PRODUCTION : bool           = _cfg["is_production"]
 PREFIX        : str            = _cfg["default"]["prefix"]
 EMB_COLOR     : str            = _cfg["default"]["embed_color"]
 POSTGRES_CREDS: dict[str, str] = _cfg["postgres"]
-DEBUG_GUILDS  : list[int]      = list(set(_cfg["debug_guilds"]))
+DEBUG_GUILD   : int            = _cfg["debug_guild"]
 
 TOKEN: str = (
     _cfg["token"]["production"]
